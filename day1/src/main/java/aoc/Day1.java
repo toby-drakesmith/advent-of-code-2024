@@ -11,11 +11,11 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Day1 {
 
-    final Queue<Integer> priorityQueue1 = new PriorityQueue<>();
-    final Queue<Integer> priorityQueue2 = new PriorityQueue<>();
+    private final Queue<Integer> priorityQueue1 = new PriorityQueue<>();
+    private final Queue<Integer> priorityQueue2 = new PriorityQueue<>();
 
-    final List<Integer> list1 = new ArrayList<>();
-    final List<Integer> list2 = new ArrayList<>();
+    private final List<Integer> list1 = new ArrayList<>();
+    private final List<Integer> list2 = new ArrayList<>();
 
     private final BufferedReader bufferedReader;
 

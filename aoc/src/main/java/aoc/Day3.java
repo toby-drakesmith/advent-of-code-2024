@@ -40,9 +40,7 @@ public class Day3 {
         Matcher matcher = allPatterns.matcher(line);
         long total = 0;
 
-        int matchCount = 0;
         while (matcher.find()) {
-            matchCount++;
             if (matcher.group("do") != null) {
                 doMultiply = true;
             } else if (matcher.group("dont") != null) {
@@ -56,7 +54,6 @@ public class Day3 {
                 }
             }
         }
-        System.out.println(matchCount);
         return total;
     }
 

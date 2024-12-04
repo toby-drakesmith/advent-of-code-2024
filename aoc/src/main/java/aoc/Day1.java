@@ -55,7 +55,7 @@ public class Day1 {
     }
 
     public static void main(String[] args) throws Exception {
-        try (InputStream inputStream = Day1.class.getClassLoader().getResourceAsStream("input")) {
+        try (InputStream inputStream = Day1.class.getClassLoader().getResourceAsStream("day1-input")) {
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             final Day1 day1 = new Day1(reader);
 //            System.out.println(day1.calculateTotalDistance());

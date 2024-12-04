@@ -9,24 +9,24 @@ import java.io.InputStreamReader;
 
 import static org.junit.Assert.assertEquals;
 
-public class Day1Test {
+public class Day2Test {
 
-    Day1 day1;
+    Day2 day2;
 
     @Before
     public void setUp() throws Exception {
-        InputStream inputStream = Day1.class.getClassLoader().getResourceAsStream("input");
+        InputStream inputStream = Day2.class.getClassLoader().getResourceAsStream("day2-input");
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        day1 = new Day1(reader);
+        day2 = new Day2(reader);
     }
 
     @Test
-    public void totalDistance() {
-        assertEquals(11, day1.calculateTotalDistance());
+    public void shouldCalculateSafeReports() {
+        assertEquals(2, day2.calculateSafeReports());
     }
 
     @Test
-    public void similarityScore() {
-        assertEquals(31, day1.calculateSimilarityScore());
+    public void shouldCalculateDampStuff() {
+        assertEquals(4, day2.calculateSafeDampReports());
     }
 }

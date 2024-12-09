@@ -8,7 +8,6 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Day2 {
-
     private BufferedReader bufferedReader;
 
     public Day2(BufferedReader bufferedReader) {
@@ -76,7 +75,7 @@ public class Day2 {
     }
 
     public static void main(String[] args) throws IOException {
-        try (InputStream inputStream = Day1.class.getClassLoader().getResourceAsStream("day2-input")) {
+        try (InputStream inputStream = Day2.class.getClassLoader().getResourceAsStream("day2-input")) {
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             Day2 day2 = new Day2(reader);
 //            System.out.println(day2.calculateSafeReports());
